@@ -10,7 +10,7 @@ services:
     links:
       - db
     #command: bash -c  'tail -f /dev/null'
-    command: bash -c 'cd /app/blogsv01/ && php artisan serve --host=0.0.0.0' 
+    command: bash -c 'cd /app/blogsv01/ && composer i &&  php artisan migrate && php artisan serve --host=0.0.0.0' 
     volumes:
       - ./:/app
   db:
