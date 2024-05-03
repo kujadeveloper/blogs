@@ -11,3 +11,4 @@ RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local
 RUN apt install zip unzip php-zip -y
 RUN apt-get install php-xml -y
 RUN apt-get install php-curl -y
+RUN apt-get install php-mbstring -y
